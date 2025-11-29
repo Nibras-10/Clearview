@@ -4,7 +4,10 @@
 
 ClearView Reader is a web application built to assist users with Dyslexia, ADHD, and visual stress. It creates a customizable environment for reading and writing, leveraging Google's Gemini API for cognitive support and the Web Speech API for auditory reinforcement.
 
-![Project Screenshot](path/to/screenshot.png)
+<div align="center">
+  <img src="screenshots/welcome.png" alt="ClearView Reader Welcome Screen with 3D Background" width="100%" style="border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin-bottom: 20px;" />
+  <img src="screenshots/interface.png" alt="ClearView Reader Main Interface" width="100%" style="border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" />
+</div>
 
 ## ✨ Key Features
 
@@ -37,3 +40,27 @@ ClearView Reader is a web application built to assist users with Dyslexia, ADHD,
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/clearview-reader.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables**
+   Create a `.env` file in the root directory and add your Gemini API key:
+   ```env
+   API_KEY=your_google_gemini_api_key
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm start
+   ```
+
+## 🎨 Accessibility First
+This project follows WCAG 2.1 guidelines, ensuring high contrast ratios, screen reader compatibility, and keyboard navigability.
+
+---
+
+*Created by [Your Name]*
