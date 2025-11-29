@@ -1,0 +1,5 @@
+{
+  "name": "ClearView Reader",
+  "description": "An accessible, dyslexic-friendly reading and writing workspace featuring Bionic Reading, Text-to-Speech, and AI-powered text simplification.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearView Reader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      /* Load OpenDyslexic from CDN */
+      @font-face {
+        font-family: 'OpenDyslexic';
+        src: url('https://cdn.jsdelivr.net/npm/opendyslexic@2.1.0/open-dyslexic-regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'tint-cream': '#FFFDD0',
+              'tint-blue': '#E6F0FF',
+              'tint-peach': '#FFF0E6',
+              'tint-dark': '#2d2d2d',
+              'off-white': '#fdfbf7',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+              dyslexic: ['OpenDyslexic', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "pdfjs-dist": "https://aistudiocdn.com/pdfjs-dist@4.0.379/build/pdf.mjs",
+    "pdfjs-dist/build/pdf.worker.mjs": "https://aistudiocdn.com/pdfjs-dist@4.0.379/build/pdf.worker.mjs",
+    "three": "https://aistudiocdn.com/three@0.174.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
